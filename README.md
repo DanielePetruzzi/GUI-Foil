@@ -9,6 +9,7 @@ For more info the thesis can be found here:
 https://www.politesi.polimi.it/handle/10589/227115
 
 NOTE: In order to run this software needs xFoil.exe in the same folder. Executable can be found here: https://web.mit.edu/drela/Public/web/xfoil/
+
 NOTE: In order to run this software needs Run.bat Run2.bat Run3.bat and Run4.bat in the same folder.
 
 FUNCTIONS:
