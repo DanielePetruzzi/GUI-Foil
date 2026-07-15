@@ -1,65 +1,42 @@
 #pragma once
 
+#include <QBrush>
 #include <QColor>
+#include <QPen>
 
 namespace Plot_Colors
 {
-    //====================================================
-    // Background
-    //====================================================
 
-    inline const QColor Background      = QColor("#FFFFFF");
-    inline const QColor Border          = QColor("#D1D5DB");
+// Pens
 
-    //====================================================
-    // Grid
-    //====================================================
+QPen axesPen();
 
-    inline const QColor Grid            = QColor("#E5E7EB");
-    inline const QColor GridText        = QColor("#6B7280");
-    inline const QColor Axis            = QColor("#9CA3AF");
+QPen gridPen();
 
-    //====================================================
-    // Airfoils
-    //====================================================
+QPen airfoilPen();
 
-    inline const QColor CurrentAirfoil  = QColor("#2563EB");
-    inline const QColor PreviousAirfoil = QColor("#9CA3AF");
+QPen referenceAirfoilPen();
 
-    //====================================================
-    // Pressure Distribution
-    //====================================================
+QPen splinePen();
 
-    inline const QColor CurrentCp       = QColor("#DC2626");
-    inline const QColor PreviousCp      = QColor("#F87171");
+QPen selectedSplinePen();
 
-    //====================================================
-    // Lift Vector
-    //====================================================
+QPen constructionPen();
 
-    inline const QColor CurrentLift     = QColor("#059669");
-    inline const QColor PreviousLift    = QColor("#6EE7B7");
+QPen highlightPen();
 
-    //====================================================
-    // Morph Editor
-    //====================================================
+QPen selectionRectanglePen();
 
-    inline const QColor MorphGhost      = QColor("#94A3B8");
-    inline const QColor ControlPoint    = QColor("#2563EB");
-    inline const QColor SelectedPoint   = QColor("#FACC15");
+// Brushes
 
-    //====================================================
-    // Flap Preview
-    //====================================================
+QBrush controlPointBrush();
 
-    inline const QColor Hinge           = QColor("#EA580C");
-    inline const QColor FlapDirection   = QColor("#7C3AED");
+QBrush selectedPointBrush();
 
-    //====================================================
-    // Generic
-    //====================================================
+QBrush leadingEdgeBrush();
 
-    inline const QColor Success         = QColor("#16A34A");
-    inline const QColor Warning         = QColor("#D97706");
-    inline const QColor Error           = QColor("#DC2626");
+QBrush trailingEdgeBrush();
+
+QBrush backgroundBrush();
+
 }
